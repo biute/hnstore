@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    android:background="#F8EAD5"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:layout_weight="2"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="Cập nhật thông tin cá nhân"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        tools:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/img_btn_camera_update_information_activity"
+            android:layout_marginBottom="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/camera_icon"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="55dp" />
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_margin="5dp"
+            android:id="@+id/img_view_picture_update_information_activity"
+            android:layout_width="95dp"
+            android:layout_height="100dp"
+            android:background="#AFADAD"
+            android:padding="5dp"
+            android:src="@drawable/ic_person_black_24dp" />
+
+        <ImageButton
+            android:layout_marginBottom="10dp"
+            android:id="@+id/img_btn_folder_update_information_activity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/folder_icon"
+            tools:layout_editor_absoluteX="225dp"
+            tools:layout_editor_absoluteY="55dp" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:inputType="textCapWords"
+        android:hint="Đặng Hòa Nhi"
+        android:id="@+id/edit_text_name_update_information_activity"
+        android:textSize="18sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="start|center"
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:gravity="center|start"
+        android:weightSum="12"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_weight="4"
+            android:textColor="#E6000000"
+            android:textSize="22sp"
+            android:text="Giới tính:"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/radio_btn_group_gioi_tinh_update_information_activity"
+            android:weightSum="8"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:shadowColor="#000"
+                android:id="@+id/radio_btn_nam_update_information_activity"
+                android:textStyle="normal"
+                android:text="Nam"
+                android:textSize="22sp"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:shadowColor="#000"
+                android:id="@+id/radio_btn_nu_update_information_activity"
+                android:textStyle="normal"
+                android:text="Nữ"
+                android:textSize="22sp"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <EditText
+
+        android:inputType="textEmailAddress"
+        android:hint="danghoanhi1999@gmail.com"
+        android:id="@+id/edit_text_email_update_information_activity"
+        android:textSize="18sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="start|center"
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <EditText
+        android:inputType="phone"
+        android:hint="0374072533"
+        android:id="@+id/edit_text_phone_update_information_activity"
+        android:textSize="18sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="start|center"
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <EditText
+        android:inputType="textPostalAddress"
+        android:hint="Quãng Ngãi"
+        android:id="@+id/edit_text_address_update_information_activity"
+        android:textSize="18sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="start|center"
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:layout_marginRight="10dp"
+            android:id="@+id/btn_update_information_activity_update_information"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Cập nhật thông tin cá nhân"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_cancel_update_activity_update_information"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="false"
+            android:text="Hủy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

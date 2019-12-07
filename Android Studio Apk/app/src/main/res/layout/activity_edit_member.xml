@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="16"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="#6EF3EB"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:paddingTop="10dp"
+        android:textColor="#E6292828"
+        android:fontFamily="sans-serif"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:paddingBottom="20dp"
+        android:gravity="center|top"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Cập nhật thông tin"
+        android:textSize="30sp"/>
+    <LinearLayout
+        android:weightSum="16"
+        android:orientation="vertical"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:background="#CC8A6802"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FA0202"
+            android:paddingLeft="10dp"
+            android:id="@+id/text_view_id_edit_member_activity"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <EditText
+            android:inputType="textCapWords"
+            android:layout_weight="2"
+            android:hint="Your name:"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:lineHeight="22sp"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:id="@+id/edit_text_name_edit_member_activity"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:gravity="center|start"
+            android:weightSum="12"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_weight="4"
+                android:textColor="#E6000000"
+                android:textSize="22sp"
+                android:text="Giới tính:"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <RadioGroup
+                android:id="@+id/radio_btn_group_gioi_tinh_edit_member_activity"
+                android:weightSum="8"
+                android:layout_weight="8"
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:shadowColor="#000"
+                    android:id="@+id/radio_btn_nam_edit_member_activity"
+                    android:textStyle="normal"
+                    android:text="Nam"
+                    android:textSize="22sp"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:shadowColor="#000"
+                    android:id="@+id/radio_btn_nu_edit_member_activity"
+                    android:textStyle="normal"
+                    android:text="Nữ"
+                    android:textSize="22sp"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_weight="2"
+            android:hint="Email:"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:lineHeight="22sp"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:id="@+id/edit_text_email_edit_member_activity"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <EditText
+            android:inputType="phone"
+            android:layout_weight="2"
+            android:hint="Phone number:"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:lineHeight="22sp"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:id="@+id/edit_text_phone_edit_member_activity"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+
+        <EditText
+            android:inputType="textCapWords"
+            android:layout_weight="2"
+            android:hint="Address:"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:lineHeight="22sp"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:id="@+id/edit_text_address_edit_member_activity"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="33"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/btn_update_edit_member_activity"
+            android:layout_weight="13"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"
+            android:text="Cập nhật"
+            android:background="#05248B"
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+
+        <Button
+            android:id="@+id/btn_cancel_edit_member_activity"
+            android:layout_weight="13"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:text="Hủy"
+            android:background="#D87B06"
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
